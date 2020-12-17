@@ -1,0 +1,12 @@
+01:19:27 **** Incremental Build of configuration Release for project test ****
+make all 
+Invoking: Print Size
+avr-size --format=berkeley -t test.elf
+   text	   data	    bss	    dec	    hex	filename
+    142	      0	      0	    142	     8e	test.elf
+    142	      0	      0	    142	     8e	(TOTALS)
+Finished building: sizedummy
+ 
+
+01:19:27 Build Finished. 0 errors, 0 warnings. (took 299ms)
+

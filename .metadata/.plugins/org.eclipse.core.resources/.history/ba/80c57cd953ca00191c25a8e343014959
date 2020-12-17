@@ -1,0 +1,22 @@
+/*
+ * embedded.c
+ *
+ *  Created on: Aug 29, 2019
+ *      Author: Mohamed Elsayed
+ */
+#include <stdio.h>
+
+#error "code is still processing"
+#define  N 6
+#undef N
+int main(void){
+
+#ifndef N
+	printf("Hello World !");
+#else
+	printf("Hello Earth !");
+#endif
+
+	return 0;
+}
+

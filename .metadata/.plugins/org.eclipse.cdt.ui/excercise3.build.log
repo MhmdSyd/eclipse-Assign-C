@@ -1,0 +1,13 @@
+02:45:29 **** Incremental Build of configuration Debug for project excercise3 ****
+make all 
+Building target: excercise3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,excercise3.map -mmcu=atmega16 -o "excercise3.elf"  ./excercise1/excercise1.o  ./excercise3.o   
+c:/winavr/bin/../lib/gcc/avr/9.1.0/../../../../avr/bin/ld.exe: ./excercise3.o: in function `main':
+../excercise3.c:10: multiple definition of `main'; ./excercise1/excercise1.o:../excercise1/excercise1.c:11: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:48: excercise3.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+02:45:29 Build Failed. 3 errors, 0 warnings. (took 578ms)
+

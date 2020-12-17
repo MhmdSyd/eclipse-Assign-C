@@ -1,0 +1,19 @@
+/*
+ * embedded.c
+ *
+ *  Created on: Aug 29, 2019
+ *      Author: Mohamed Elsayed
+ */
+#include  "include.h"
+
+int main(void){
+
+#if N>5
+	printf("Hello World !");
+#else
+	printf("Hello Earth !");
+#endif
+
+	return 0;
+}
+

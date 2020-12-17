@@ -1,0 +1,21 @@
+/*
+ * embedded.c
+ *
+ *  Created on: Aug 29, 2019
+ *      Author: Mohamed Elsayed
+ */
+#include  "include.h"
+
+int main(void){
+	unsigned char z;
+#if N>5
+	printf("Hello World !");
+#else
+	printf("Hello Earth !");
+	z = ADD(5,2*3);
+	printf("\t%d",z);
+#endif
+
+	return 0;
+}
+

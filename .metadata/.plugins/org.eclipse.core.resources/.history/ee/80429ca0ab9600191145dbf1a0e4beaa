@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	unsigned int n , i , j , sum=0 ;
+	scanf("%d",&n);
+	int arr[n],arr_sort[n]={0};
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	for(i=0;i<n;i++)
+	{
+		j = arr[i];
+		arr_sort[j]++;
+	}
+	for(i=0;i<n;i++)
+	{
+		sum +=arr_sort[i];
+		if(sum >= ((n-1)/2))
+		{
+			printf("%d",i);
+			goto end;
+		}
+	}
+end:
+
+	return 0;
+}
+

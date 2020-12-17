@@ -1,0 +1,24 @@
+/*
+ * embedded.c
+ *
+ *  Created on: Aug 29, 2019
+ *      Author: Mohamed Elsayed
+ */
+#include  "include.h"
+extern int a;
+extern float b;
+register int c=8;
+void fun(void);
+int main(void){
+	int z= a*5;
+	float y=b*2;
+	printf("%d   %f",z,y);
+	fun();
+	return 0;
+}
+
+int d=20;
+void fun(void){
+	printf("\n%d",d);
+	return;
+}

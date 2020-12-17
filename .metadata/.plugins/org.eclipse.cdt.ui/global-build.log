@@ -1,0 +1,65 @@
+18:40:24 **** Rebuild of configuration Debug for project embeddedc ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o emb2.o "..\\emb2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o embedded.o "..\\embedded.c" 
+gcc -o embeddedc.exe emb2.o embedded.o 
+Info: Nothing to build for embeddedc
+18:42:36 **** Incremental Build of configuration Debug for project embeddedc ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o embedded.o "..\\embedded.c" 
+gcc -o embeddedc.exe emb2.o embedded.o 
+Info: Nothing to build for embeddedc
+18:42:50 **** Incremental Build of configuration Debug for project embeddedc ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o embedded.o "..\\embedded.c" 
+gcc -o embeddedc.exe emb2.o embedded.o 
+Info: Nothing to build for embeddedc
+18:43:14 **** Incremental Build of configuration Debug for project embeddedc ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o embedded.o "..\\embedded.c" 
+..\embedded.c: In function 'main':
+..\embedded.c:13:10: error: 'd' undeclared (first use in this function)
+   13 |  float y=d*2;
+      |          ^
+..\embedded.c:13:10: note: each undeclared identifier is reported only once for each function it appears in
+18:43:24 **** Incremental Build of configuration Debug for project embeddedc ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o embedded.o "..\\embedded.c" 
+gcc -o embeddedc.exe emb2.o embedded.o 
+Info: Nothing to build for embeddedc
+19:01:38 **** Incremental Build of configuration Debug for project embeddedc ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o embedded.o "..\\embedded.c" 
+..\embedded.c:10:1: error: multiple storage classes in declaration specifiers
+   10 | register auto int c=8;
+      | ^~~~~~~~
+19:01:50 **** Incremental Build of configuration Debug for project embeddedc ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o embedded.o "..\\embedded.c" 
+..\embedded.c:10:14: error: register name not specified for 'c'
+   10 | register int c=8;
+      |              ^
+19:02:15 **** Incremental Build of configuration Debug for project embeddedc ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o embedded.o "..\\embedded.c" 
+..\embedded.c:10:14: error: register name not specified for 'c'
+   10 | register int c;
+      |              ^
+19:02:26 **** Incremental Build of configuration Debug for project embeddedc ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o embedded.o "..\\embedded.c" 
+..\embedded.c:10:15: error: register name not specified for 'c'
+   10 | register char c;
+      |               ^
+19:02:32 **** Incremental Build of configuration Debug for project embeddedc ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o embedded.o "..\\embedded.c" 
+..\embedded.c:10:11: warning: type defaults to 'int' in declaration of 'c' [-Wimplicit-int]
+   10 | register  c;
+      |           ^
+..\embedded.c:10:11: error: register name not specified for 'c'
+19:03:17 **** Incremental Build of configuration Debug for project embeddedc ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o embedded.o "..\\embedded.c" 
+gcc -o embeddedc.exe emb2.o embedded.o 
+Info: Nothing to build for embeddedc

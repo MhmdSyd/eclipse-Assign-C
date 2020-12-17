@@ -1,0 +1,53 @@
+/*
+ * 19.c
+ *
+ *  Created on: Jul 9, 2019
+ *      Author: Mohamed Elsayed
+ */
+#include <stdio.h>
+
+_Bool expose(unsigned int);
+
+int power(unsigned int , unsigned int);
+
+int main(void)
+{
+	unsigned int z ;
+	_Bool checker;
+	scanf("%u",&z);
+	checker = expose(z);
+	printf("%d",checker);
+	return 0;
+}
+
+_Bool expose(number)
+{
+	unsigned int q , p ;
+	_Bool checker ;
+	for(p=2 ; p<number;q++)
+	{
+		for(q=2 ; q<number;q++)
+		{
+			if(number == power(p,q))
+			{
+				checker = 1;
+				break;
+			}else
+			{
+				checker = 0;
+			}
+		}
+		if(checker == pow(p,q))
+		{
+			checker = 1;
+			break;
+		}
+	}
+	return checker;
+}
+
+int power(unsigned int p , unsigned int q)
+{
+	int sum =0;
+	for
+}

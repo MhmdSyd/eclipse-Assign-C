@@ -1,0 +1,16 @@
+/*
+ * embedded.c
+ *
+ *  Created on: Aug 29, 2019
+ *      Author: Mohamed Elsayed
+ */
+#include  "include.h"
+extern int a;
+extern float b;
+int main(void){
+	int z= a*5;
+
+	return 0;
+}
+
+

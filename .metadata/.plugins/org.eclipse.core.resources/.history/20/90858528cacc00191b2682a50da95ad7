@@ -1,0 +1,22 @@
+/*
+ * pointer.c
+ *
+ *  Created on: Aug 22, 2019
+ *      Author: Mohamed Elsayed
+ */
+#include <stdio.h>
+
+void fun(int*,int*);
+
+int main(void){
+	float a=2.3;
+	double b=2.3;
+	if(a == b){
+		printf("true");
+
+	}else{
+		printf("false");
+	}
+	return 0;
+}
+

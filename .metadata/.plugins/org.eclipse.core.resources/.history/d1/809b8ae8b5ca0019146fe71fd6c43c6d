@@ -1,0 +1,38 @@
+/*
+ * pointer.c
+ *
+ *  Created on: Aug 22, 2019
+ *      Author: Mohamed Elsayed
+ */
+#include <stdio.h>
+
+typedef enum{
+	false=0,
+	true=1
+}bool;
+
+enum number{
+	zero,one,two,three,four,five,six,seven,eight,nine,ten, g,tre
+};
+
+int main(void){
+	bool sub=true;
+	int temp=0;
+	int arr[]={two,four,eight,ten,three};
+	int *ptrArr[6];
+	for(int i=0;i<6;i++){
+		ptrArr[i]=&arr[i];
+	}
+	for(int i=0;i<six;i++){
+		if(temp<(*ptrArr[i])){
+			temp=*ptrArr[i];
+		}
+
+	}
+	printf("%d\t%d",temp,sub);
+	printf("\n%d",sizeof(enum number));
+
+	return 0;
+}
+
+

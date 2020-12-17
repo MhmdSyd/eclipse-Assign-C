@@ -1,0 +1,27 @@
+/*
+ * pointer.c
+ *
+ *  Created on: Aug 22, 2019
+ *      Author: Mohamed Elsayed
+ */
+#include <stdio.h>
+
+
+
+int main(void){
+
+	int a=1;
+	switch(a){
+		int a=100;
+		case 1 : printf("one");
+			break;
+		case 100 : printf("hundred");
+			break;
+		case default :
+			printf("two");
+			break;
+
+	}
+	return 0;
+}
+

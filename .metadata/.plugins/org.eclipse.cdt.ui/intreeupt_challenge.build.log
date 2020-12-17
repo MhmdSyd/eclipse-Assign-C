@@ -1,0 +1,12 @@
+07:39:20 **** Incremental Build of configuration Debug for project intreeupt_challenge ****
+make all 
+Invoking: Print Size
+avr-size --format=berkeley -t intreeupt_challenge.elf
+   text	   data	    bss	    dec	    hex	filename
+    350	      0	      0	    350	    15e	intreeupt_challenge.elf
+    350	      0	      0	    350	    15e	(TOTALS)
+Finished building: sizedummy
+ 
+
+07:39:21 Build Finished. 0 errors, 0 warnings. (took 368ms)
+

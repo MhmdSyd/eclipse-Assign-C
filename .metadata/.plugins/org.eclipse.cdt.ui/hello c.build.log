@@ -1,0 +1,14 @@
+12:51:55 **** Build of configuration Debug for project hello c ****
+make all 
+'Building target: hello c'
+'Invoking: Cross GCC Linker'
+gcc  -o "hello c"  ./src/hello\ c.o   
+gcc: error: ./src/hello\: No such file or directory
+gcc: error: c.o: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+make: *** [makefile:32: hello c] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+12:51:55 Build Failed. 1 errors, 0 warnings. (took 183ms)
+

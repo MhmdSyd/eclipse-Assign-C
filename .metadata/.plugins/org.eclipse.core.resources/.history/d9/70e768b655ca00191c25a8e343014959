@@ -1,0 +1,19 @@
+/*
+ * include.h
+ *
+ *  Created on: Aug 29, 2019
+ *      Author: Mohamed Elsayed
+ */
+
+#ifndef INCLUDE_H_
+#define INCLUDE_H_
+
+#include <stdio.h>
+
+#define  N 3
+#define INLINE inline
+#define ADD(X,Y) z=((X)+(Y)) \
+	*2;\
+	printf("%d",z)
+
+#endif /* INCLUDE_H_ */

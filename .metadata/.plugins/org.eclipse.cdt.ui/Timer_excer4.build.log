@@ -1,0 +1,12 @@
+13:06:50 **** Incremental Build of configuration Debug for project Timer_excer4 ****
+make all 
+Invoking: Print Size
+avr-size --format=berkeley -t Timer_excer4.elf
+   text	   data	    bss	    dec	    hex	filename
+   1064	      0	      0	   1064	    428	Timer_excer4.elf
+   1064	      0	      0	   1064	    428	(TOTALS)
+Finished building: sizedummy
+ 
+
+13:06:51 Build Finished. 0 errors, 0 warnings. (took 375ms)
+

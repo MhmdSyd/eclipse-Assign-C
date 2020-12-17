@@ -1,0 +1,12 @@
+23:59:04 **** Incremental Build of configuration Debug for project Challenge2 ****
+make all 
+Invoking: Print Size
+avr-size --format=berkeley -t Challenge2.elf
+   text	   data	    bss	    dec	    hex	filename
+   1596	      0	      0	   1596	    63c	Challenge2.elf
+   1596	      0	      0	   1596	    63c	(TOTALS)
+Finished building: sizedummy
+ 
+
+23:59:04 Build Finished. 0 errors, 0 warnings. (took 547ms)
+

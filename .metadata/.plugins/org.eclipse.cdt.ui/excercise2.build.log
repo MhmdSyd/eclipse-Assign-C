@@ -1,0 +1,12 @@
+02:45:28 **** Incremental Build of configuration Debug for project excercise2 ****
+make all 
+Invoking: Print Size
+avr-size --format=berkeley -t excercise2.elf
+   text	   data	    bss	    dec	    hex	filename
+   1040	      0	      0	   1040	    410	excercise2.elf
+   1040	      0	      0	   1040	    410	(TOTALS)
+Finished building: sizedummy
+ 
+
+02:45:29 Build Finished. 0 errors, 0 warnings. (took 375ms)
+

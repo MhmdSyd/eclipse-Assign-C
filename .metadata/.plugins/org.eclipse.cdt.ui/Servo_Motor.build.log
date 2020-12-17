@@ -1,0 +1,30 @@
+16:18:02 **** Incremental Build of configuration Debug for project Servo_Motor ****
+make all 
+Building file: ../Servo_Motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Servo_Motor.d" -MT"Servo_Motor.o" -c -o "Servo_Motor.o" "../Servo_Motor.c"
+In file included from ../Servo_Motor.c:9:
+c:\winavr\avr\include\util\delay.h:112:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed" [-Wcpp]
+  112 | # warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+      |   ^~~~~~~
+Finished building: ../Servo_Motor.c
+ 
+Building target: Servo_Motor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Servo_Motor.map -mmcu=atmega16 -o "Servo_Motor.elf"  ./Servo_Motor.o   
+Finished building target: Servo_Motor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Servo_Motor.elf  >"Servo_Motor.lss"
+Finished building: Servo_Motor.lss
+ 
+Invoking: Print Size
+avr-size --format=berkeley -t Servo_Motor.elf
+   text	   data	    bss	    dec	    hex	filename
+   1798	      0	      0	   1798	    706	Servo_Motor.elf
+   1798	      0	      0	   1798	    706	(TOTALS)
+Finished building: sizedummy
+ 
+
+16:18:03 Build Finished. 0 errors, 1 warnings. (took 539ms)
+

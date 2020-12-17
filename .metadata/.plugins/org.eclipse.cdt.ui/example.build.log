@@ -1,0 +1,12 @@
+01:19:25 **** Incremental Build of configuration Debug for project example ****
+make all 
+Invoking: Print Size
+avr-size --format=berkeley -t example.elf
+   text	   data	    bss	    dec	    hex	filename
+   3694	      0	      1	   3695	    e6f	example.elf
+   3694	      0	      1	   3695	    e6f	(TOTALS)
+Finished building: sizedummy
+ 
+
+01:19:26 Build Finished. 0 errors, 0 warnings. (took 404ms)
+

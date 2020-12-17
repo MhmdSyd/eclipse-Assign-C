@@ -1,0 +1,11 @@
+04:25:37 **** Incremental Build of configuration Release for project chalange 1 ****
+make all 
+Building target: chalange 1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,chalange 1.map -mmcu=atmega16 -o "chalange 1.elf"  ./main.o   
+avr-gcc.exe: error: 1.map: No such file or directory
+make: *** [makefile:52: chalange 1.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+04:25:37 Build Failed. 1 errors, 0 warnings. (took 622ms)
+

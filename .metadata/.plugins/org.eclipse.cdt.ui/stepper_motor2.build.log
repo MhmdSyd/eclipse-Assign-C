@@ -1,0 +1,12 @@
+13:06:52 **** Incremental Build of configuration Debug for project stepper_motor2 ****
+make all 
+Invoking: Print Size
+avr-size --format=berkeley -t stepper_motor2.elf
+   text	   data	    bss	    dec	    hex	filename
+   1118	      8	      0	   1126	    466	stepper_motor2.elf
+   1118	      8	      0	   1126	    466	(TOTALS)
+Finished building: sizedummy
+ 
+
+13:06:53 Build Finished. 0 errors, 0 warnings. (took 391ms)
+

@@ -1,0 +1,34 @@
+07:54:24 **** Incremental Build of configuration Release for project Timer_ex4 ****
+make all 
+Building file: ../Timer_ex4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer_ex4.d" -MT"Timer_ex4.o" -c -o "Timer_ex4.o" "../Timer_ex4.c"
+Finished building: ../Timer_ex4.c
+ 
+Building target: Timer_ex4.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Timer_ex4.map -mmcu=atmega16 -o "Timer_ex4.elf"  ./Timer_ex4.o   
+Finished building target: Timer_ex4.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Timer_ex4.elf  >"Timer_ex4.lss"
+Finished building: Timer_ex4.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Timer_ex4.elf  "Timer_ex4.hex"
+Finished building: Timer_ex4.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Timer_ex4.elf  "Timer_ex4.eep"
+Finished building: Timer_ex4.eep
+ 
+Invoking: Print Size
+avr-size --format=berkeley -t Timer_ex4.elf
+   text	   data	    bss	    dec	    hex	filename
+    156	      0	      0	    156	     9c	Timer_ex4.elf
+    156	      0	      0	    156	     9c	(TOTALS)
+Finished building: sizedummy
+ 
+
+07:54:26 Build Finished. 0 errors, 0 warnings. (took 1s.431ms)
+

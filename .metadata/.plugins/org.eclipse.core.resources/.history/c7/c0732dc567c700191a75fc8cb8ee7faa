@@ -1,0 +1,18 @@
+/*
+ * Servo_Motor.c
+ *
+ *  Created on: Aug 25, 2019
+ *      Author: Mohamed Elsayed
+ */
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include  <util/delay.h>
+
+#define F_CPU 1000000
+
+int main(void){
+	DDRD |=(1<<PD5);
+	PORTD &=(1<<PD5);
+
+	return 0;
+}

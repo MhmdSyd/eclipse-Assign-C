@@ -1,0 +1,40 @@
+/*
+ * steper_motor.c
+ *
+ *  Created on: Aug 20, 2019
+ *      Author: Mohamed Elsayed
+ */
+#include  <avr/io.h>
+#include <util/delay.h>
+#include  <math.h>
+#define F_CPU 1000000
+
+int main(void) {
+	unsigned char i = 1;
+	unsigned char arr[4] = { 12, 6, 3, 9 };
+	DDRA &= ~(1 << PA0);
+	DDRA &= ~(1 << PA1);
+	DDRC |= 0x0F;
+	PORTC &= 0xFC;
+
+	while (1) {
+		if ((PINA & (1 << PA0))) {
+			_delay_ms(30);
+			if (PINA & (1 << PA0)) {
+				i = (i + 1) % 4;
+				PORTC = arr[i];
+			}
+			while (PINA & (1 << PA0));
+		}
+		if ((PINA & (1 << PA1))) {
+			_delay_ms(30);
+			if (PINA & (1 << PA1)) {
+				i =(--i)% 4;
+				PORTC = arr[i];
+			}
+			while (PINA & (1 << PA1));
+		}
+	}
+	return 0;
+}
+

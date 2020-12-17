@@ -1,0 +1,25 @@
+/*
+ * embedded.c
+ *
+ *  Created on: Aug 29, 2019
+ *      Author: Mohamed Elsayed
+ */
+#include  "include.h"
+
+INLINE int add(int,int);
+int main(void){
+	int z;
+#if N>5
+	printf("Hello World !");
+#else
+	printf("Hello Earth !");
+	z=add(5,6);
+#endif
+	return 0;
+}
+
+INLINE int add(int x,int y){
+	int z;
+	z=x+y;
+	return z;
+}

@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	unsigned int n , i , j , z ;
+	int y;
+	scanf("%d",&n);
+	int arr[n];
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	for(i=0;i<n;i++)
+	{
+		for(j=(i+1);j<n;j++)
+		{
+			if(arr[j]<arr[i])
+			{
+				y = arr[i];
+				arr[i]=arr[j];
+				arr[j]=y;
+			}
+		}
+	}
+	z=(n-1)/2;
+	printf("%d",arr[z]);
+
+
+	return 0;
+}
+

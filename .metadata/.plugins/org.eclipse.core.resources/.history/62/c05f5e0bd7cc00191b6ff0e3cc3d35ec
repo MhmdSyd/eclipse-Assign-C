@@ -1,0 +1,14 @@
+/*
+ * embedded.c
+ *
+ *  Created on: Aug 29, 2019
+ *      Author: Mohamed Elsayed
+ */
+#include  "include.h"
+
+int main(void){
+
+	return 0;
+}
+
+

@@ -1,0 +1,12 @@
+13:06:49 **** Incremental Build of configuration Debug for project DC_Motor2 ****
+make all 
+Invoking: Print Size
+avr-size --format=berkeley -t DC_Motor2.elf
+   text	   data	    bss	    dec	    hex	filename
+   2016	      0	      0	   2016	    7e0	DC_Motor2.elf
+   2016	      0	      0	   2016	    7e0	(TOTALS)
+Finished building: sizedummy
+ 
+
+13:06:49 Build Finished. 0 errors, 0 warnings. (took 375ms)
+

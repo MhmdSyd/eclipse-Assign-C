@@ -1,0 +1,42 @@
+/*
+ * Servo_Motor.c
+ *
+ *  Created on: Aug 25, 2019
+ *      Author: Mohamed Elsayed
+ */
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include  <util/delay.h>
+
+#define F_CPU 1000000
+
+void Timer1_init();
+void Timer1_angle(double);
+
+unsigned char i;
+int main(void){
+	Timer1_init();
+	while(1){
+		for(i=149;i<250;i+=10){
+		_delay_ms(2000);
+		Timer1_angle(100);
+		_delay_ms(2000);
+		Timer1_angle(75);
+		}
+	}
+	return 0;
+}
+
+void Timer1_init(void){
+	TCCR1A |=(1<<COM1A1) | (1<<WGM11);
+	TCCR1B |=(1<<WGM12) | (1<<WGM13) | (1<<CS11);
+	TCNT1=0;
+	ICR1=2499;
+	OCR1A=200;
+	SREG |=(1<<7);
+	DDRD |=(1<<PD5);
+}
+
+void Timer1_angle(double i){
+	OCR1A=i;
+}

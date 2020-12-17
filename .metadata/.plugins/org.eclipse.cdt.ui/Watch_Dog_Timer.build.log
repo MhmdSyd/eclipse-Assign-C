@@ -1,0 +1,12 @@
+13:06:51 **** Incremental Build of configuration Debug for project Watch_Dog_Timer ****
+make all 
+Invoking: Print Size
+avr-size --format=berkeley -t Watch_Dog_Timer.elf
+   text	   data	    bss	    dec	    hex	filename
+   2658	      0	      0	   2658	    a62	Watch_Dog_Timer.elf
+   2658	      0	      0	   2658	    a62	(TOTALS)
+Finished building: sizedummy
+ 
+
+13:06:51 Build Finished. 0 errors, 0 warnings. (took 390ms)
+

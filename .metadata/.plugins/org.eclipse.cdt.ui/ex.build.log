@@ -1,0 +1,7 @@
+02:41:29 **** Clean-only build of configuration Debug for project ex ****
+make clean 
+rm -rf  ex.hex  ./ex.o  ex.eep  sizedummy  ex.lss  ./ex.d  ex.elf
+ 
+
+02:41:30 Build Finished. 0 errors, 0 warnings. (took 709ms)
+
